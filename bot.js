@@ -32,7 +32,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         var spawnOptions = ["Scav", "Scav", "Scav", "PMC", "PMC", "PMC", "PMC", "PMC", "PMC", "PMC"];
         var levelResponses = ["Customs", "Shoreline", "Woods", "Interchange", "Factory", "Labs"];
         var weaponGroups = ["Pistols", "Shotguns", "SMGs", "ARs", "Mosins", "Melee Weapons"];
-        var tasks = ["do a Loot Run (Most Money acquired from items in raid Wins)", "a Quest Specific Run", "go PMC Hunting (Highest number of kills wins)", "Participate in a Headshots Race. Each headshot adds 5 points to your total. Each non-headshot kill removes 2 points from your total. Highest Score at end of the round wins", "Hunt the Scav Boss", "Collect a new Key", "not kill two people in a row (AI or PMCs) using the same weapon"];
+        var tasks = ["do a Loot Run (Most Money acquired from items in raid Wins)", "a Quest Specific Run", "go PMC Hunting (Highest number of kills wins)", "Participate in a Headshots Race. Each headshot adds 5 points to your total. Each non-headshot kill removes 2 points from your total. Highest Score at end of the round wins", "Hunt the Scav Boss", "Collect a new Key", "not kill two people in a row (AI or PMCs) using the same weapon", "Do a Metal Gear Run. Silenced Pistol, Covert Movement", "No Meds", "Hatchling Run", "Cosplay Run - Blueberry", "Cosplay - Mike Myers", "Cosplay - Gym Teacher"];
         args = args.splice(1);
         switch (cmd) {
             // !ping
@@ -101,14 +101,3 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 });
 
-// case 'rollem':
-// var spawn = spawnOptions[Math.floor(math.random() * spawnOptions.length)];
-// var level = levelResponses[Math.floor(Math.random() * levelResponses.length)];
-// var weaponGroup = weaponGroups[Math.floor(Math.random() *
-//     weaponGroups.length)];
-// var task = taskResponses[Math.floor(Math.random() * taskResponses.length)];
-// var response = "The Wheel of Tarkov has determined that you will do a " + spawn + " run on " + level + "using " + weaponGroup + " and that your objective will be to " + task;
-// bot.sendMessage({
-//     to: channelID,
-//     message: response
-// });
